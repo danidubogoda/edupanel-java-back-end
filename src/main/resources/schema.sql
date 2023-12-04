@@ -19,3 +19,8 @@ CREATE TABLE IF NOt EXISTS part_time_rank (
     CONSTRAINT pk_part PRIMARY KEY (lecturer_id , `rank`),
     CONSTRAINT fk_part FOREIGN KEY (lecturer_id) REFERENCES lecture (id)
     );
+
+ALTER TABLE lecture ADD COLUMN   (
+                                       designation VARCHAR(600) NOT NULL
+
+);
